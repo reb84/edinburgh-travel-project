@@ -3,9 +3,19 @@
   margin: 0;
 }
 
+:root {
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Open Sans", sans-serif;
+  --bg-color: #ecebe7;
+  --text-color: #262626;
+  --link-color: #4b4629;
+  --otherlink-color: #965f2c;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
-  background: #edece8;
+  font-family: var(--default-font-family);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .container {
@@ -36,20 +46,27 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: #965f2c;
+}
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../imgs/edinheader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
   padding: 200px 0;
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font-family);
 }
 
 header h1 {
-  font-weight: 700;
-  font-size: 90px;
+  font-size: 80px;
   line-height: 1;
   margin: 30px 0;
 }
@@ -64,22 +81,15 @@ header h2 {
 header a {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.5;
   text-align: center;
-  color: #272044;
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: white;
-  font-family: "Open Sans", sans-serif;
-}
-
-header a:hover {
-  color: #272044;
-  background: #edece8;
+  background: var(--bg-color);
+  font-family: var(--default-font-family);
 }
 
 main {
@@ -93,7 +103,6 @@ main h2 {
   line-height: 1.5;
   margin: 0;
   letter-spacing: 5px;
-  color: #272044;
   opacity: 0.3;
   text-transform: uppercase;
 }
@@ -102,9 +111,8 @@ main h3 {
   font-weight: 700;
   font-size: 34px;
   line-height: 1.5;
-  color: #272044;
   margin: 0;
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font-family);
 }
 
 main p {
@@ -112,18 +120,17 @@ main p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #272044;
 }
 
 .midintro {
-  background-color: #edece8;
+  background: var(--bg-color);
   width: 80%;
   padding: 30px;
   margin: 20px auto;
 }
 
 .card {
-  background: #edece8;
+  background: var(--bg-color);
   margin: 30px 0;
 }
 
@@ -144,13 +151,18 @@ main p {
   color: white;
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 14px;
-  background-color: #462cb3;
+  background-color: var(--otherlink-color);
   text-decoration: none;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  color: var(--link-color);
+  background-color: #c48b56;
 }
 
 section {
@@ -160,7 +172,6 @@ section {
 }
 
 section.secondary {
-  background: #f8f8f8;
   padding: 100px;
 }
 
@@ -170,7 +181,7 @@ section.third {
 }
 
 .music {
-  background: #edece8;
+  background: var(--bg-color);
   margin: 30px 0;
 }
 
@@ -179,7 +190,7 @@ section.third {
 }
 
 footer {
-  background: #d7d7d7;
+  background: #e4e3de;
   padding: 20px;
 }
 
@@ -192,22 +203,18 @@ footer h3 {
 footer p {
   font-weight: 400;
   font-size: 14px;
-  opacity: 0.7;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 footer ul {
   padding: 0;
+  font-size: 14px;
 }
 
 footer li {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-footer a {
-  opacity: 0.8;
 }
 
 @media (max-width: 960px) {
