@@ -32,7 +32,7 @@ section {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../imgs/edinheader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +44,7 @@ header {
 
 header h1 {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 90px;
   line-height: 1;
   margin: 30px 0;
 }
@@ -54,15 +54,6 @@ header h2 {
   font-size: 40px;
   line-height: 1.5;
   margin: 0;
-}
-
-header h3 {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
 }
 
 header a {
@@ -79,6 +70,11 @@ header a {
   text-transform: uppercase;
   background: white;
   font-family: "Open Sans", sans-serif;
+}
+
+header a:hover {
+  color: #272044;
+  background: #edece8;
 }
 
 main {
