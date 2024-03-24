@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: #edece8;
@@ -157,6 +162,20 @@ section {
 section.secondary {
   background: #f8f8f8;
   padding: 100px;
+}
+
+section.third {
+  padding: 10px;
+  width: 70%;
+}
+
+.music {
+  background: #edece8;
+  margin: 30px 0;
+}
+
+.music-body {
+  padding: 0px;
 }
 
 footer {
